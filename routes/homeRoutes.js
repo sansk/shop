@@ -1,11 +1,9 @@
 const express = require("express");
+const productsController = require("../controllers/productsController");
 
 const router = express.Router();
 
-router.get("/", (req, res, next) => {
-  const products = require("./adminRoutes").products; // Can be deleted
-  res.render("home", { pageTitle: "Home", path: "/", prods: products });
-});
+router.get("/", productsController.getAllProducts);
 
 module.exports = {
   router: router,
