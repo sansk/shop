@@ -1,0 +1,30 @@
+[
+  {
+    "id": "0.65856316247821",
+    "title": "A Book",
+    "imageUrl": "https://images.ctfassets.net/6nwv0fapso8r/6fHhKK91M3A1gWzMOnT2SC/e671b18c8ff765fe7537cb13fddf37e3/CC_ProductBook.png",
+    "description": "This is an awesome book!",
+    "price": "19.99"
+  },
+  {
+    "title": "Sandels",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7BxDrAI3cfbhQCg1qXBbE1WGotFIMGzbqgQ&s",
+    "description": "Another very amazing product!",
+    "price": "9.99",
+    "id": "0.558673316244021"
+  },
+  {
+    "title": "Headphones",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD60ROQMguoiuRHUNwxbHy4GphjphlEHrkwQ&s",
+    "description": "Here is your amazing headphones",
+    "price": "29.99",
+    "id": "0.274593316244021"
+  },
+  {
+    "title": "Digital Camera",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s",
+    "description": "Everyone's favorite digital camera!",
+    "price": "99.99",
+    "id": "0.95864567986244021"
+  }
+]

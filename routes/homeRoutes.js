@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.get("/", homeController.getIndex);
 router.get("/product-list", homeController.getProducts);
+router.get("/product/:productId", homeController.getProduct);
 router.get("/cart", homeController.getCart);
 router.get("/checkout", homeController.getCheckout);
 router.get("/orders", homeController.getOrders);

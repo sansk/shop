@@ -1,6 +1,6 @@
 const Product = require("../models/productModel");
 
-const products = Product.fetchAll();
+// const products = Product.fetchAllProducts();
 
 const getAddProduct = (req, res, next) => {
   res.render("./admin/add-product", {
@@ -18,11 +18,21 @@ const postAddProduct = (req, res, next) => {
 };
 
 const getAllProducts = (req, res, next) => {
-  res.render("./admin/product-view", {
-    pageTitle: "Manage Products",
-    path: "/admin/product-view",
-    prods: products,
+  //   res.render("./admin/product-view", {
+  //     pageTitle: "Manage Products",
+  //     path: "/admin/product-view",
+  //     prods: products,
+  //   });
+
+  // File Reads
+  Product.fetchAllProducts((products) => {
+    res.render("admin/product-view", {
+      prods: products,
+      pageTitle: "Manage Products",
+      path: "/admin/product-view",
+    });
   });
+  //End of File reads
 };
 
 module.exports = {
